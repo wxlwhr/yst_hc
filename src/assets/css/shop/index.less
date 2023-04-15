@@ -1,0 +1,110 @@
+.yst-shop-container {
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+
+    &-left,
+    &-right {
+        width: 460px;
+
+        .yst-shop-container-content {
+            height: 100%;
+            background: #021921;
+            box-sizing: border-box;
+            padding: 15px 20px;
+            .content-row1 {
+                display: flex;
+                justify-content: space-between;
+
+                .content-row1-info {
+                    background: url("../../images/statistic_bg.png") no-repeat;
+                    width: 200px;
+                    height: 110px;
+                    text-align: center;
+                    padding: 4px 0 15px;
+
+                    >div:nth-child(1) {
+                        line-height: 22px;
+
+                        img {
+                            width: 22px;
+                            height: 22px;
+                        }
+
+                        >span:nth-child(2) {
+                            font-size: 14px;
+                            font-family: Source Han Sans CN;
+                            color: #CCEFEC;
+                            padding-left: 4px;
+                        }
+                    }
+
+                    >div:nth-child(2) {
+                        font-size: 32px;
+                        font-family: Source Han Sans CN;
+                        font-weight: bold;
+                        color: #23FAFB;
+                        line-height: 60px;
+                    }
+
+                    >div:nth-child(3) {
+                        font-size: 14px;
+                        font-family: Source Han Sans CN;
+                        color: #CCEFEC;
+
+                        >span:nth-child(2) {
+                            padding-left: 10px;
+                        }
+
+                        >span:nth-child(3) {
+                            padding-left: 5px;
+
+                            img {
+                                width: 18px;
+                                height: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content-row2 {
+                height: 230px;
+                background-color: #042530;
+                margin-top: 20px;
+                .sex-canvas {
+                    height: 60px;
+                }
+
+                >div:nth-child(2) {
+                    height: calc(100% - 90px);
+                }
+            }
+        }
+    }
+
+    &-title {
+        background: url("../../images/字框bg.png") no-repeat;
+        background-size: 100% 100%;
+        background-position: center top;
+        width: 250px;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 20px;
+
+        >span {
+            font-size: 20px;
+            font-family: Source Han Sans CN;
+            font-weight: 500;
+            color: #FFFFFF;
+            background: linear-gradient(0deg, #B5FFDA 0%, #FFFFFF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &-center {
+        flex: 1;
+        padding: 0 20px;
+    }
+}
